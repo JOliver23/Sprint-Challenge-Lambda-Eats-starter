@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const SCon = styled.div`
-background: linear-gradient(45deg, red, white, blue);
+width: 100vw;
+height: 100vh;
+background: linear-gradient(45deg, red, papayawhip, green);
 border: 1rem dotted white;
 `;
 

@@ -117,7 +117,7 @@ export default function Form() {
                     <option value="x-large">X-Large 18"</option>
                 </select>
             </label>
-            <label htmlFor="toppings">
+            <label htmlFor="toppings" className="toppings">
                 Select Toppings
                 <input type="checkbox" name="pepperoni" onChange={inputChange} value="pepperoni"/>Pepperoni
                 <input type="checkbox" name="sausage" onChange={inputChange} value="sausage"/>Sausage
