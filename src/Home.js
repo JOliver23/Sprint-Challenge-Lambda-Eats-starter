@@ -4,7 +4,9 @@ export default function Home() {
 
     return (
         <div>
-            Build your pizza
+            Build your pizza here!
+            
+
         </div>
     );
 }
