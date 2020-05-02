@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import axios from "axios";
+import { SForm } from "./Form-Styles";
 
 export default function Form() {
     const [order, setOrder] =useState([]);
@@ -83,7 +84,8 @@ export default function Form() {
     }
 
     return (
-        <form onSubmit={formSubmit}>
+        <SForm onSubmit={formSubmit}>
+            <h2>Build Your Own Pizza</h2>
             <label htmlFor="name">
                 Name
                 <input
@@ -134,6 +136,6 @@ export default function Form() {
             </label>
             <button type="submit">Submit Order</button>
             <pre>{JSON.stringify(order, 2, null)}</pre>
-        </form>
+        </SForm>
     )
 }

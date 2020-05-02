@@ -2,6 +2,7 @@ import React, { useState} from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import Form from "./Form";
 import Home from "./Home";
+import { SCon } from "./Form-Styles";
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <SCon>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/pizza">Order Now!</Link>
@@ -34,7 +35,7 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
-    </div>
+    </SCon>
   );
 };
 export default App;
